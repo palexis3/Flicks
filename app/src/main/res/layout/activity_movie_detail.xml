@@ -44,9 +44,12 @@
         android:layout_below="@+id/titleDetailView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
     <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar">
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -57,7 +60,7 @@
             android:layout_below="@+id/ratingBar"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
-            
+
     </ScrollView>
 
 
