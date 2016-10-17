@@ -78,6 +78,7 @@ public class MovieActivity extends AppCompatActivity {
                         i.putExtra("title", movie.getOriginalTitle());
                         i.putExtra("overview", movie.getOverView());
                         i.putExtra("poster_image", movie.getPosterPath());
+                        i.putExtra("id", movie.getId());
                         startActivity(i);
                     }
                 }

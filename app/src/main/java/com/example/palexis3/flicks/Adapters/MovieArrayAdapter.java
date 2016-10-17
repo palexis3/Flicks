@@ -63,22 +63,6 @@ public class MovieArrayAdapter extends ArrayAdapter<Movie>{
 
         Picasso.with(getContext()).load(image).into(viewHolder.image);
 
-        // find th image view
-        //ImageView ivImage = (ImageView) convertView.findViewById(R.id.idMovieImage);
-
-        //clear out image from convertView
-
-        //ivImage.setImageResource(0);
-
-        //TextView tvTitle = (TextView) convertView.findViewById(R.id.tvTitle);
-        //TextView tvOverView = (TextView) convertView.findViewById(R.id.tvOverview);
-
-        //populate data
-
-        //tvTitle.setText(movie.getOriginalTitle());
-        //tvOverView.setText(movie.getOverView());
-
-
         //return the view
         return convertView;
     }

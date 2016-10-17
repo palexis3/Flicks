@@ -27,11 +27,14 @@ public class Movie {
 
     public String getReleaseDate() { return releaseDate; }
 
+    public String getId() { return id; }
+
     String posterPath;
     String originalTitle;
     String overView;
     String backdropPath;
     String releaseDate;
+    String id;
 
 
     public Movie(JSONObject jsonObject) throws JSONException{
@@ -41,6 +44,7 @@ public class Movie {
         this.overView = jsonObject.getString("overview");
         this.backdropPath = jsonObject.getString("backdrop_path");
         this.releaseDate = jsonObject.getString("release_date");
+        this.id = jsonObject.getString("id");
     }
 
     public static ArrayList<Movie> fromJSONArray(JSONArray array){
