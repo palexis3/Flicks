@@ -40,7 +40,10 @@ public class MovieDetailActivity extends AppCompatActivity {
 
         //populate views with data
         titleView.setText(title);
-        dateView.setText(date);
+        //parsing date
+        String[] arr = date.split("-");
+        dateView.setText("Release Date: " + arr[1] + "-" + arr[2] + "-" + arr[0]);
+
         overviewView.setText(overview);
         Picasso.with(this).load(poster_image).into(image);
 

@@ -13,6 +13,7 @@
         android:layout_width="300dp"
         android:layout_height="200dp"
         android:id="@+id/movieImageDetailView"
+        android:layout_marginBottom="-30dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:scaleType="fitXY"
@@ -34,7 +35,10 @@
         android:layout_marginTop="57dp"
         android:layout_below="@+id/movieImageDetailView"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:typeface="sans"
+        android:textColor="#000000"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -43,7 +47,7 @@
         android:id="@+id/dateDetailView"
         android:layout_below="@+id/titleDetailView"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"/>
 
     <ScrollView
         android:layout_width="wrap_content"
@@ -54,10 +58,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:maxLines="100"
+            android:maxLines="200"
             android:scrollbars="vertical"
             android:id="@+id/overviewDetailView"
-            android:layout_below="@+id/ratingBar"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
