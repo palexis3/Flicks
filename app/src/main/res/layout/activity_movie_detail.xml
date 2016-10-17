@@ -23,7 +23,7 @@
         android:id="@+id/play_icon"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/play_icon"
+        android:src="@drawable/play_icon2"
         android:translationX="140dp"
         android:translationY="80dp"
         android:alpha="0.8"

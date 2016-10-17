@@ -14,7 +14,7 @@
     </style>
 
     <style name="FlicksTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="android:background">#EE8E14</item>
+        <item name="android:background">#FFFFFF</item>
     </style>
 
 </resources>
