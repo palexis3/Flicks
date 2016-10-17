@@ -8,4 +8,13 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="PlayIconTheme">
+        <item name="android:shadowColor">#ffffff</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+    </style>
+
+    <style name="FlicksTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">#EE8E14</item>
+    </style>
+
 </resources>

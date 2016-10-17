@@ -19,6 +19,16 @@
         android:scaleType="fitXY"
         android:adjustViewBounds="true"/>
 
+    <ImageView
+        android:id="@+id/play_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/play_icon"
+        android:translationX="140dp"
+        android:translationY="80dp"
+        android:alpha="0.8"
+        android:theme="@style/PlayIconTheme"/>
+
     <RatingBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
