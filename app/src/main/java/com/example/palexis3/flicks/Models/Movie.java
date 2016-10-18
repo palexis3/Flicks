@@ -29,12 +29,15 @@ public class Movie {
 
     public String getId() { return id; }
 
+    public int getPopularity() { return (int) Math.round(popularity); }
+
     String posterPath;
     String originalTitle;
     String overView;
     String backdropPath;
     String releaseDate;
     String id;
+    double popularity;
 
 
     public Movie(JSONObject jsonObject) throws JSONException{
@@ -45,6 +48,7 @@ public class Movie {
         this.backdropPath = jsonObject.getString("backdrop_path");
         this.releaseDate = jsonObject.getString("release_date");
         this.id = jsonObject.getString("id");
+        this.popularity = jsonObject.getDouble("vote_average");
     }
 
     public static ArrayList<Movie> fromJSONArray(JSONArray array){

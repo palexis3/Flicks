@@ -16,6 +16,8 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+import jp.wasabeef.picasso.transformations.RoundedCornersTransformation;
+
 public class MovieArrayAdapter extends ArrayAdapter<Movie>{
 
     private static class ViewHolder {
@@ -61,12 +63,9 @@ public class MovieArrayAdapter extends ArrayAdapter<Movie>{
             image = movie.getBackdropPath();
         }
 
-        Picasso.with(getContext()).load(image).into(viewHolder.image);
+        Picasso.with(getContext()).load(image).transform(new RoundedCornersTransformation(10, 10)).into(viewHolder.image);
 
         //return the view
         return convertView;
     }
 }
-
-
-
