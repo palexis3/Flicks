@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:id="@+id/movieImageDetailView"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/scrollView"
+        android:layout_toEndOf="@+id/scrollView" />
+
+    <ImageView
+        android:id="@+id/play_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/play_icon2"
+        android:translationX="140dp"
+        android:translationY="80dp"
+        android:alpha="0.8"
+        android:theme="@style/PlayIconTheme"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_alignBottom="@+id/movieImageDetailView"
+        android:layout_toRightOf="@+id/movieImageDetailView"
+        android:layout_toEndOf="@+id/movieImageDetailView"
+        android:layout_marginBottom="38dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:id="@+id/titleDetailView"
+        android:textSize="20dp"
+        android:typeface="sans"
+        android:textColor="#000000"
+        android:layout_alignBottom="@+id/play_icon"
+        android:layout_toRightOf="@+id/movieImageDetailView"
+        android:layout_toEndOf="@+id/movieImageDetailView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:id="@+id/dateDetailView"
+        android:layout_above="@+id/ratingBar"
+        android:layout_toRightOf="@+id/movieImageDetailView"
+        android:layout_toEndOf="@+id/movieImageDetailView"
+        android:layout_marginBottom="24dp" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar"
+        android:id="@+id/scrollView">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="200"
+        android:scrollbars="vertical"
+        android:text="Overview"
+        android:id="@+id/overviewDetailView"
+        android:layout_below="@+id/ratingBar"
+        android:layout_toRightOf="@+id/movieImageDetailView"
+        android:layout_toEndOf="@+id/movieImageDetailView" />
+
+    </ScrollView>
+
+
+</RelativeLayout>
